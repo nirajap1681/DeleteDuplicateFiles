@@ -21,7 +21,7 @@ def is_connected():
 
 def MailSender(filename,time,tomail):
     try:
-        fromadd = "nirajpachpande1681@gmail.com"
+        fromadd = "sender_mail" 
         toadd = tomail
 
         msg = MIMEMultipart()
@@ -63,7 +63,7 @@ def MailSender(filename,time,tomail):
 
         s.starttls()
 
-        s.login(fromadd,"ecrnamtlkflwxsma")
+        s.login(fromadd,"passkey")
 
         text = msg.as_string()
 
